@@ -1,0 +1,252 @@
+@font-face {
+    font-family: bolds;
+    src: url(./fonts/UncutSans-Bold.ttf);
+}
+@font-face {
+    font-family: med;
+    src: url(./fonts/UncutSans-Medium.ttf);
+}
+@font-face {
+    font-family: reg;
+    src: url(./fonts/UncutSans-Regular.ttf);
+}
+@font-face {
+    font-family: Sbold;
+    src: url(./fonts/UncutSans-Semibold.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0 4vw;
+}
+
+#bg{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./images/home-shapes-full.svg);
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 8vh;
+}
+
+nav .p-1{
+    width: calc(100%/3);
+    height: 100%;
+}
+
+nav .p-1:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+}
+nav .p-1:nth-child(2) img:nth-child(1){
+    width: 5vw;
+}
+
+nav .p-1:nth-child(2) img:nth-child(2){
+    width: 5vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 0;
+    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+nav .p-1:nth-child(2) img:nth-child(2):hover{
+    opacity: 1;
+}
+
+nav .p-1:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4vw;
+}
+
+.btn{
+    font-family: Sbold;
+    font-size: .8vw;
+    font-weight: 700;
+    padding: 1.2vh 1.3vw;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+nav .p-1:nth-child(3) .btn:nth-child(1){
+    border: 1px solid #e2e2e2;
+    transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+nav .p-1:nth-child(3) .btn:nth-child(1):hover{
+    background-color: #F9C558;
+}
+
+nav .p-1:nth-child(3) .btn:nth-child(2){
+    color: white;
+    background-color: black;
+    transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+nav .p-1:nth-child(3) .btn:nth-child(2):hover{
+    background-color: rgb(48, 151, 230);
+}
+
+#part-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+    width: 100%;
+    margin-top: 10vh;
+}
+
+#part-1 h1{
+    font-family: bolds;
+    font-size: 4vw;
+    width: 30vw;
+    text-align: center;
+    line-height: 1;
+    /* background-color: red; */
+}
+
+#part-1 p{
+    font-family: Sbold;
+    font-size: 1vw;
+    font-weight: 300;
+    opacity: .6;
+    width: 36%;
+    text-align: center;
+}
+
+#part-1 .btn{
+    font-family: bolds;
+    font-size: 1vw;
+    padding: 2vh 3vw;
+    color: white;
+    background-color: black;
+}
+
+#part-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 18vh;
+}
+
+#part-2 img{
+    width: 50%;
+}
+
+#part-3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6vh;
+    margin-top: 10vh;
+}
+
+#part-3 .top h2{
+    font-family: bolds;
+    font-size: 2.4vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+#part-3 .top p{
+    font-family: med;
+    font-size: 1.2vw;
+    font-weight: 500;
+    opacity: .6;
+    text-align: center;
+    margin-top: 1.8vh;
+}
+
+#part-3 .btm{
+    width: 70%;
+    display: flex;
+    /* background-color: red; */
+}
+
+#part-3 .btm .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    /* background-color: red; */
+}
+
+#part-3 .btm .card h2{
+    font-family: med;
+}
+
+#part-3 .btm .card p{
+    font-family: med;
+    text-align: center;
+    width: 90%;
+    font-size: 1vw;
+    opacity: .7;
+    /* background-color: red; */
+}
+
+#part-3 .btn{
+    font-family: bolds;
+    font-size: 1vw;
+    padding: 2vh 3vw;
+    color: white;
+    background-color: black;
+}
+
+footer{
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+footer img{
+    width: 4vw;
+}
+
+footer p{
+    font-family: med;
+    opacity: .8;
+}
+
+footer .links{
+    display: flex;
+    gap: 1.5vw;
+}
+
+footer a{
+    font-family: med;
+    text-decoration: none;
+    color: black;
+}
+
+footer p:nth-child(4){
+    font-size: .8vw;
+    margin-bottom: 5vh;
+}
